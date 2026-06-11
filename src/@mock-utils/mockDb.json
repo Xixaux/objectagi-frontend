@@ -1,0 +1,953 @@
+{
+  "users": [
+    {
+      "id": "0",
+      "password": "5;4+0IOx:\\Dy",
+      "role": "admin",
+      "displayName": "Jack Smith",
+      "photoURL": "/assets/images/avatars/male-04.jpg",
+      "email": "admin@objectagi.com",
+      "settings": {
+        "layout": {},
+        "theme": {}
+      },
+      "shortcuts": [
+        "apps.calendar",
+        "apps.mailbox",
+        "apps.contacts"
+      ]
+    }
+  ],
+  "profile_albums": [
+    {
+      "id": "3",
+      "userId": "0",
+      "name": "April 2018",
+      "info": "7 Photos",
+      "created_at": "2025-04-01"
+    }
+  ],
+  "profile_media_items": [
+    {
+      "id": "22",
+      "userId": "0",
+      "album_id": "3",
+      "type": "photo",
+      "title": "Braies Lake",
+      "preview": "/assets/images/apps/profile/braies-lake-small.jpg",
+      "created_at": "2018-04-01"
+    }
+  ],
+  "profile_activities": [
+    {
+      "id": "8",
+      "userId": "0",
+      "user": {
+        "name": "Vincent Munoz",
+        "avatar": "/assets/images/avatars/male-08.jpg"
+      },
+      "message": "shared a photo with you.",
+      "time": "June 4,2015"
+    }
+  ],
+  "profile_posts": [
+    {
+      "id": "1",
+      "userId": "0",
+      "user": {
+        "name": "Garry Newman",
+        "avatar": "/assets/images/avatars/male-09.jpg"
+      },
+      "message": "Remember the place we were talking about the other night? Found it!",
+      "time": "32 minutes ago",
+      "type": "post",
+      "like": 5,
+      "share": 21,
+      "media": {
+        "type": "image",
+        "preview": "/assets/images/cards/14-640x480.jpg"
+      },
+      "comments": [
+        {
+          "id": "1",
+          "user": {
+            "name": "Alice Freeman",
+            "avatar": "/assets/images/avatars/female-07.jpg"
+          },
+          "time": "June 10, 2015",
+          "message": "That’s a wonderful place. Lorem feugiat."
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "userId": "0",
+      "user": {
+        "name": "Andrew Green",
+        "avatar": "/assets/images/avatars/male-11.jpg"
+      },
+      "message": "Hey, man! Check this, it’s pretty awesome!",
+      "time": "June 12, 2015",
+      "type": "article",
+      "like": 98,
+      "share": 6,
+      "article": {
+        "title": "Never stop changing!",
+        "subtitle": "John Westrock",
+        "excerpt": "Never stop changing will take you right in.",
+        "media": {
+          "type": "image",
+          "preview": "/assets/images/cards/36-640x480.jpg"
+        }
+      },
+      "comments": [
+        {
+          "id": "1",
+          "user": {
+            "name": "Alice Freeman",
+            "avatar": "/assets/images/avatars/female-09.jpg"
+          },
+          "time": "June 10, 2015",
+          "message": "That’s it."
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "userId": "0",
+      "user": {
+        "name": "Carl Henderson",
+        "avatar": "/assets/images/avatars/male-12.jpg"
+      },
+      "message": "Lorem ipsum dolor sit amet.",
+      "time": "June 10, 2015",
+      "type": "something",
+      "like": 4,
+      "share": 1
+    }
+  ],
+  "profile_about": [
+    {
+      "id": "0",
+      "userId": "0",
+      "general": {
+        "gender": "Male",
+        "birthday": "February 30th, 1974",
+        "locations": [
+          "London, UK",
+          "New York, USA"
+        ],
+        "about": "Lorem ipsum dolor sit amet."
+      },
+      "work": {
+        "occupation": "Developer",
+        "skills": "C#, PHP, Javascript, Angular, JS, HTML, CSS",
+        "jobs": [
+          {
+            "company": "Self-Employed",
+            "date": "2010 - Now"
+          },
+          {
+            "company": "Google",
+            "date": "2008 - 2010"
+          }
+        ]
+      },
+      "contact": {
+        "address": "Mauris nec euismod odio.",
+        "tel": [
+          "+6 555 6600",
+          "+9 555 5255"
+        ],
+        "websites": [
+          "singularitythemes.com"
+        ],
+        "emails": [
+          "mail@singularitythemes.com",
+          "mail@creapond.com"
+        ]
+      },
+      "groups": [
+        {
+          "id": "1",
+          "name": "Android",
+          "category": "Technology",
+          "members": "1.856.546"
+        },
+        {
+          "id": "2",
+          "name": "Google",
+          "category": "Web",
+          "members": "1.226.121"
+        },
+        {
+          "id": "3",
+          "name": "Fallout",
+          "category": "Games",
+          "members": "526.142"
+        }
+      ],
+      "friends": [
+        {
+          "id": "6",
+          "name": "Alice Freeman",
+          "avatar": "/assets/images/avatars/female-12.jpg"
+        },
+        {
+          "id": "7",
+          "name": "Andrew Green",
+          "avatar": "/assets/images/avatars/male-16.jpg"
+        }
+      ]
+    }
+  ],
+  "project_dashboard_projects": [
+    {
+      "id": 1,
+      "name": "eUniverse 1"
+    },
+    {
+      "id": 2,
+      "name": "eUniverse 1"
+    },
+    {
+      "id": 3,
+      "name": "eUniverse 3"
+    },
+    {
+      "id": 4,
+      "name": "eUniverse 4"
+    }
+  ],
+  "calendar_events": [
+    {
+      "id": "13",
+      "title": "Multi-day Event",
+      "allDay": false,
+      "start": "2022-04-20T19:30:00+03:00",
+      "end": "2022-04-22T02:00:00+03:00",
+      "extendedProps": {
+        "desc": "",
+        "label": "09887870-f85a-40eb-8171-1b13d7a7f529"
+      }
+    }
+  ],
+  "calendar_labels": [
+    {
+      "id": "1a470c8e-40ed-4c2d-b590-a4f1f6ead6cc",
+      "title": "Personal",
+      "color": "#419388"
+    },
+    {
+      "id": "5dab5f7b-757a-4467-ace1-305fe07b11fe",
+      "title": "Work",
+      "color": "#4151B0"
+    },
+    {
+      "id": "09887870-f85a-40eb-8171-1b13d7a7f529",
+      "title": "Appointments",
+      "color": "#D63E63"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "30af917b-7a6a-45d1-822f-9e7ad7f8bf69",
+      "icon": "heroicons-solid:arrow-path-rounded-square",
+      "title": "Cron jobs",
+      "description": "Your Vagrant container is ready to download",
+      "time": "2022-05-05T10:57:42.703Z",
+      "read": true,
+      "link": "/apps/file-manager",
+      "useRouter": true
+    }
+  ],
+  "help_center_guides": [
+    {
+      "id": "cc65f92a-7d46-4557-b15b-6f8f59a60576",
+      "categoryId": "41fdf071-aec4-49de-9dd4-b4f746596928",
+      "slug": "two-factor-authentication",
+      "title": "Two factor authentication",
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+    }
+  ],
+  "help_center_guide_categories": [
+    {
+      "id": "0ee72de7-49c0-4880-9e89-b72a4edd6a81",
+      "slug": "getting-started",
+      "title": "Getting Started"
+    },
+    {
+      "id": "07b8421f-20bf-45b6-90ee-169ebe3a5bcc",
+      "slug": "projects",
+      "title": "Projects"
+    },
+    {
+      "id": "c88a1f54-360a-4b9b-a54b-2f92b7a1f63b",
+      "slug": "settings",
+      "title": "Settings"
+    },
+    {
+      "id": "7b25b38c-1ab3-4474-8569-65b3ea232add",
+      "slug": "payments",
+      "title": "Payments"
+    },
+    {
+      "id": "41fdf071-aec4-49de-9dd4-b4f746596928",
+      "slug": "your-account",
+      "title": "Your Account"
+    }
+  ],
+  "help_center_faqs": [
+    {
+      "id": "f65d517a-6f69-4c88-81f5-416f47405ce1",
+      "categoryId": "28924eab-97cc-465a-ba21-f232bb95843f",
+      "question": "Is there a 14-days trial?",
+      "answer": "Magna consectetur culpa duis mollit."
+    }
+  ],
+  "help_center_faqs_categories": [
+    {
+      "id": "395b0d41-b9a8-4cd6-8b5c-f07855e82d62",
+      "slug": "general-inquiries",
+      "title": "General inquiries"
+    },
+    {
+      "id": "71c34043-d89d-4aca-951d-8606c3943c43",
+      "slug": "payments",
+      "title": "Payments"
+    },
+    {
+      "id": "bea49ee0-26da-46ad-97be-116cd7ab416d",
+      "slug": "support",
+      "title": "Support"
+    }
+  ],
+  "file_manager_items": [
+    {
+      "id": "cd6897cb-acfd-4016-8b53-3f66a5b5fc68",
+      "folderId": "root",
+      "name": "Personal",
+      "createdBy": "Bryan Hulken",
+      "createdAt": "April 24, 2018",
+      "modifiedAt": "April 24, 2018",
+      "size": "87 MB",
+      "type": "folder",
+      "contents": "57 files",
+      "description": "Personal documents such as insurance policies, tax papers and etc."
+    },
+    {
+      "id": "894e8514-03d3-4f5e-bb28-f6c092501fae",
+      "folderId": "cd6897cb-acfd-4016-8b53-3f66a5b5fc68",
+      "name": "A personal file",
+      "createdBy": "Bryan Hulken",
+      "createdAt": "June 02, 2025",
+      "modifiedAt": "June 02, 2025",
+      "size": "943 KB",
+      "type": "XLS",
+      "contents": null,
+      "description": null
+    },
+    {
+      "id": "74010810-16cf-441d-a1aa-c9fb620fceea",
+      "folderId": "cd6897cb-acfd-4016-8b53-3f66a5b5fc68",
+      "name": "A personal folder",
+      "createdBy": "Bryan Hulken",
+      "createdAt": "November 01, 2025",
+      "modifiedAt": "November 01, 2025",
+      "size": "3015 MB",
+      "type": "folder",
+      "contents": "907 files",
+      "description": "Personal photos; selfies, family, vacation and etc."
+    },
+    {
+      "id": "a8c73e5a-8114-436d-ab54-d900b50b3762",
+      "folderId": "74010810-16cf-441d-a1aa-c9fb620fceea",
+      "name": "A personal file within the personal folder",
+      "createdBy": "Bryan Hulken",
+      "createdAt": "June 02, 2025",
+      "modifiedAt": "June 02, 2025",
+      "size": "943 KB",
+      "type": "XLS",
+      "contents": null,
+      "description": null
+    },
+    {
+      "id": "12d851a8-4f60-473e-8a59-abe4b422ea99",
+      "folderId": "6da8747f-b474-4c9a-9eba-5ef212285500",
+      "name": "Photos file",
+      "createdBy": "Bryan Hulken",
+      "createdAt": "June 02, 2025",
+      "modifiedAt": "June 02, 2025",
+      "size": "943 KB",
+      "type": "XLS",
+      "contents": null,
+      "description": null
+    },
+    {
+      "id": "2836766d-27e1-4f40-a31a-5a8419105e7e",
+      "folderId": "ed58add1-45a7-41db-887d-3ca7ee7f2719",
+      "name": "Work file",
+      "createdBy": "Bryan Hulken",
+      "createdAt": "June 02, 2025",
+      "modifiedAt": "June 02, 2025",
+      "size": "943 KB",
+      "type": "XLS",
+      "contents": null,
+      "description": null
+    }
+  ],
+  "academy_courses": [
+    {
+      "id": "02992ac9-d1a3-4167-b70e-8a1d5b5ba253",
+      "title": "Cognitive Flutter API",
+      "slug": "cognitive-flutter-api",
+      "description": "Integrate advanced cognitive processing for enhanced UI interactions in Flutter applications",
+      "category": "web",
+      "duration": 90,
+      "totalSteps": 11,
+      "updatedAt": "Sep 18, 2025",
+      "featured": false,
+      "progress": {
+        "currentStep": 8,
+        "completed": 2
+      }
+    },
+    {
+      "id": "2139512f-41fb-4a4a-841a-0b4df0c9b4",
+      "title": "Firebase Cognition API",
+      "slug": "firebase-cognition-api",
+      "description": "Leverage Firebase for real-time cognitive data processing and analytics",
+      "category": "android",
+      "duration": 45,
+      "totalSteps": 11,
+      "updatedAt": "Apr 24, 2025",
+      "featured": false,
+      "progress": {
+        "currentStep": 0,
+        "completed": 0
+      }
+    },
+    {
+      "id": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+      "title": "Memory Search API",
+      "slug": "memory-search-api",
+      "description": "Enable efficient semantic memory retrieval for cognitive applications",
+      "category": "cognitive",
+      "duration": 60,
+      "totalSteps": 10,
+      "updatedAt": "Oct 10, 2025",
+      "featured": false,
+      "progress": {
+        "currentStep": 0,
+        "completed": 0
+      }
+    },
+    {
+      "id": "b2c3d4e5-f6a7-4b8c-9d0e-1f2a3b4c5d6e",
+      "title": "Emotion Detection API",
+      "slug": "emotion-detection-api",
+      "description": "Analyze and interpret user emotions from text or voice inputs",
+      "category": "cognitive",
+      "duration": 50,
+      "totalSteps": 8,
+      "updatedAt": "Oct 05, 2025",
+      "featured": false,
+      "progress": {
+        "currentStep": 0,
+        "completed": 0
+      }
+    },
+    {
+      "id": "c3d4e5f6-a7b8-4c9d-0e1f-2a3b4c5d6e7f",
+      "title": "Attention Tracking API",
+      "slug": "attention-tracking-api",
+      "description": "Monitor and analyze user attention patterns for cognitive insights",
+      "category": "cognitive",
+      "duration": 70,
+      "totalSteps": 12,
+      "updatedAt": "Sep 30, 2025",
+      "featured": false,
+      "progress": {
+        "currentStep": 0,
+        "completed": 0
+      }
+    },
+    {
+      "id": "d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f8a",
+      "title": "Decision Making API",
+      "slug": "decision-making-api",
+      "description": "Support complex decision-making processes with cognitive modeling",
+      "category": "cognitive",
+      "duration": 80,
+      "totalSteps": 14,
+      "updatedAt": "Sep 25, 2025",
+      "featured": false,
+      "progress": {
+        "currentStep": 0,
+        "completed": 0
+      }
+    },
+    {
+      "id": "e5f6a7b8-c9d0-4e1f-2a3b-4c5d6e7f8a9b",
+      "title": "Language Comprehension API",
+      "slug": "language-comprehension-api",
+      "description": "Process and understand natural language for cognitive applications",
+      "category": "cognitive",
+      "duration": 65,
+      "totalSteps": 10,
+      "updatedAt": "Sep 20, 2025",
+      "featured": false,
+      "progress": {
+        "currentStep": 0,
+        "completed": 0
+      }
+    },
+    {
+      "id": "f6a7b8c9-d0e1-4f2a-3b4c-5d6e7f8a9b0c",
+      "title": "Cognitive Load API",
+      "slug": "cognitive-load-api",
+      "description": "Measure and optimize cognitive load in user interactions",
+      "category": "cognitive",
+      "duration": 55,
+      "totalSteps": 9,
+      "updatedAt": "Sep 15, 2025",
+      "featured": false,
+      "progress": {
+        "currentStep": 0,
+        "completed": 0
+      }
+    },
+    {
+      "id": "a7b8c9d0-e1f2-4a3b-5c6d-7e8f9a0b1c2d",
+      "title": "Pattern Recognition API",
+      "slug": "pattern-recognition-api",
+      "description": "Identify and analyze cognitive patterns in data streams",
+      "category": "cognitive",
+      "duration": 75,
+      "totalSteps": 11,
+      "updatedAt": "Sep 10, 2025",
+      "featured": false,
+      "progress": {
+        "currentStep": 0,
+        "completed": 0
+      }
+    },
+    {
+      "id": "b8c9d0e1-f2a3-4b5c-6d7e-8f9a0b1c2d3e",
+      "title": "Memory Augmentation API",
+      "slug": "memory-augmentation-api",
+      "description": "Enhance user memory retention through cognitive augmentation",
+      "category": "cognitive",
+      "duration": 60,
+      "totalSteps": 10,
+      "updatedAt": "Sep 05, 2025",
+      "featured": false,
+      "progress": {
+        "currentStep": 0,
+        "completed": 0
+      }
+    },
+    {
+      "id": "c9d0e1f2-a3b4-4c6d-7e8f-9a0b1c2d3e4f",
+      "title": "Sentiment Analysis API",
+      "slug": "sentiment-analysis-api",
+      "description": "Evaluate user sentiment to tailor cognitive experiences",
+      "category": "cognitive",
+      "duration": 50,
+      "totalSteps": 8,
+      "updatedAt": "Aug 30, 2025",
+      "featured": false,
+      "progress": {
+        "currentStep": 0,
+        "completed": 0
+      }
+    },
+    {
+      "id": "d0e1f2a3-b4c5-4d7e-8f9a-0b1c2d3e4f5a",
+      "title": "Cognitive Simulation API",
+      "slug": "cognitive-simulation-api",
+      "description": "Simulate cognitive processes for predictive analytics",
+      "category": "cognitive",
+      "duration": 85,
+      "totalSteps": 13,
+      "updatedAt": "Aug 25, 2025",
+      "featured": false,
+      "progress": {
+        "currentStep": 0,
+        "completed": 0
+      }
+    },
+    {
+      "id": "e1f2a3b4-c5d6-4e8f-9a0b-1c2d3e4f5a6b",
+      "title": "Attention Span API",
+      "slug": "attention-span-api",
+      "description": "Optimize content delivery based on user attention spans",
+      "category": "cognitive",
+      "duration": 45,
+      "totalSteps": 7,
+      "updatedAt": "Aug 20, 2025",
+      "featured": false,
+      "progress": {
+        "currentStep": 0,
+        "completed": 0
+      }
+    },
+    {
+      "id": "f2a3b4c5-d6e7-4f9a-0b1c-2d3e4f5a6b7c",
+      "title": "Learning Analytics API",
+      "slug": "learning-analytics-api",
+      "description": "Track and analyze cognitive learning patterns for education",
+      "category": "cognitive",
+      "duration": 70,
+      "totalSteps": 12,
+      "updatedAt": "Aug 15, 2025",
+      "featured": false,
+      "progress": {
+        "currentStep": 0,
+        "completed": 0
+      }
+    },
+    {
+      "id": "a3b4c5d6-e7f8-4a0b-1c2d-3e4f5a6b7c8d",
+      "title": "Cognitive Feedback API",
+      "slug": "cognitive-feedback-api",
+      "description": "Provide real-time feedback for cognitive performance improvement",
+      "category": "cognitive",
+      "duration": 60,
+      "totalSteps": 10,
+      "updatedAt": "Aug 10, 2025",
+      "featured": false,
+      "progress": {
+        "currentStep": 0,
+        "completed": 0
+      }
+    },
+    {
+      "id": "b4c5d6e7-f8a9-4b0c-1d3e-4f5a6b7c8d9e",
+      "title": "Neuroadaptive API",
+      "slug": "neuroadaptive-api",
+      "description": "Adapt interfaces dynamically based on cognitive states",
+      "category": "cognitive",
+      "duration": 80,
+      "totalSteps": 14,
+      "updatedAt": "Aug 05, 2025",
+      "featured": false,
+      "progress": {
+        "currentStep": 0,
+        "completed": 0
+      }
+    }
+  ],
+  "academy_course_steps": [
+    {
+      "id": "694e4e5f-f25f-470b-bd0e-26b1g4f64001",
+      "courseId": "0",
+      "order": 0,
+      "title": "Introduction",
+      "subtitle": "Introducing the library and how it works"
+    },
+    {
+      "id": "694e4e5f-f25f-470b-bd0e-26b1g4f64008",
+      "courseId": "0",
+      "order": 10,
+      "title": "Congratulations!",
+      "subtitle": "Nice work, you have created your first application"
+    }
+  ],
+  "academy_course_step_contents": [
+    {
+      "id": "0",
+      "stepId": "0",
+      "html": "\n<p class=\"lead\">\n    Lorem Assumenda, eum, minima! Autem consectetur fugiat iste sit! Nobis omnis quo repellendus.\n</p>\n"
+    }
+  ],
+  "academy_categories": [
+    {
+      "id": "b7f8e2a1-4d9c-4a1b-8f3e-2a5c7d9e3f1a",
+      "title": "Authentication",
+      "slug": "authentication",
+      "color": "#3f51b5"
+    },
+    {
+      "id": "c9a2d3f4-6e2b-4c7d-9a1f-3b6e8f0c2d5b",
+      "title": "REST",
+      "slug": "rest",
+      "color": "#f44336"
+    },
+    {
+      "id": "e1b4f6a7-8c3d-4e9f-0b2a-4c7f9e1d3a6c",
+      "title": "GraphQL",
+      "slug": "graphql",
+      "color": "#e91e63"
+    },
+    {
+      "id": "f2c5a8b9-9d4e-4f0a-1c3b-5d8a0f2e4b7d",
+      "title": "WebSocket",
+      "slug": "websocket",
+      "color": "#009688"
+    },
+    {
+      "id": "a3d6b9c0-0e5f-4a1b-2d4c-6e9b1f3a5c8e",
+      "title": "SOAP",
+      "slug": "soap",
+      "color": "#673ab7"
+    },
+    {
+      "id": "b4e7c0d1-1f6a-4b2c-3e5d-7f0c2a4b6d9f",
+      "title": "Rate-Limiting",
+      "slug": "rate-limiting",
+      "color": "#ff9800"
+    },
+    {
+      "id": "c5f8d1e2-2a7b-4c3d-4f6e-8a1d3b5c7e0a",
+      "title": "Data",
+      "slug": "data",
+      "color": "#4caf50"
+    },
+    {
+      "id": "d6a9e2f3-3b8c-4d4e-5a7f-9b2e4c6d8f1b",
+      "title": "Payment/Billing",
+      "slug": "payment-billing",
+      "color": "#2196f3"
+    },
+    {
+      "id": "e7b0f3a4-4c9d-4e5f-6b8a-0c3f5d7e9a2c",
+      "title": "Webhook",
+      "slug": "webhook",
+      "color": "#795548"
+    },
+    {
+      "id": "f8c1a4b5-5d0e-4f6a-7c9b-1d4a6e8f0b3d",
+      "title": "Developer Support",
+      "slug": "developer-support",
+      "color": "#607d8b"
+    }
+  ],
+  "messenger_contacts": [
+    {
+      "id": "c674b6e1-b846-4bba-824b-0b4df0cdec48",
+      "avatar": "/assets/images/avatars/male-13.jpg",
+      "name": "Duran Barr",
+      "about": "Hi there! I'm using ObjectAGIChat.",
+      "status": "do-not-disturb",
+      "details": {
+        "emails": [
+          {
+            "email": "duranbarr@mail.com",
+            "label": "Personal"
+          },
+          {
+            "email": "barr.duran@hinway.name",
+            "label": "Work"
+          }
+        ],
+        "phoneNumbers": [
+          {
+            "country": "sr",
+            "phoneNumber": "857 457 2508",
+            "label": "Mobile"
+          },
+          {
+            "country": "sr",
+            "phoneNumber": "887 522 2146",
+            "label": "Work"
+          },
+          {
+            "country": "sr",
+            "phoneNumber": "947 574 3174",
+            "label": "Home"
+          }
+        ],
+        "title": "Insurance Analyst",
+        "company": "Hinway",
+        "birthday": "1977-11-06T12:00:00.000Z",
+        "address": "103 Chestnut Avenue, Glenbrook, Indiana, PO2578"
+      },
+      "attachments": {
+        "media": [
+          "/assets/images/cards/01-320x200.jpg",
+          "/assets/images/cards/02-320x200.jpg",
+          "/assets/images/cards/03-320x200.jpg",
+          "/assets/images/cards/04-320x200.jpg",
+          "/assets/images/cards/05-320x200.jpg",
+          "/assets/images/cards/06-320x200.jpg",
+          "/assets/images/cards/07-320x200.jpg",
+          "/assets/images/cards/08-320x200.jpg"
+        ],
+        "docs": [],
+        "links": []
+      }
+    }
+  ],
+  "app_account_settings": [
+    {
+      "id": "0",
+      "name": "Bryan Hulken",
+      "username": "brianh",
+      "title": "Senior Frontend Developer",
+      "company": "YXZ Software",
+      "about": "Hey! This is Brian; husband, father and gamer. I'm mostly passionate about bleeding edge tech and chocolate! 🍫",
+      "email": "awesome.brian@mail.com",
+      "phone": "121-490-33-12",
+      "country": "United States",
+      "language": "English"
+    }
+  ],
+  "app_notification_settings": [
+    {
+      "id": "0",
+      "communication": true,
+      "security": true,
+      "meetups": false,
+      "comments": false,
+      "mention": true,
+      "follow": true,
+      "inquiry": true
+    }
+  ],
+  "app_security_settings": [
+    {
+      "id": "0",
+      "currentPassword": "changeme",
+      "newPassword": "",
+      "twoStepVerification": true,
+      "askPasswordChange": false
+    }
+  ],
+  "app_plan_billing_settings": [
+    {
+      "id": "0",
+      "plan": "team",
+      "cardHolder": "",
+      "cardNumber": "",
+      "cardExpiration": "",
+      "cardCVC": "",
+      "country": "",
+      "zip": ""
+    }
+  ],
+  "app_team_members": [
+    {
+      "id": "1",
+      "avatar": "/assets/images/avatars/male-03.jpg",
+      "name": "Mclaughlin Steele",
+      "email": "mclaughlinsteele@mail.me",
+      "role": "admin"
+    }
+  ],
+  "messenger_chat_list": [
+    {
+      "id": "ff6bc7f1-449a-4419-af62-b89ce6cae0aa",
+      "contactIds": [
+        "9d3f0e7f-dcbd-4e56-a5e8-87b8154e9edf",
+        "cfaad35d-07a3-4447-a6c3-d8c3d54fd5df"
+      ],
+      "unreadCount": 2,
+      "muted": false,
+      "lastMessage": "See you tomorrow!",
+      "lastMessageAt": "2022-01-05T15:56:48.732Z"
+    }
+  ],
+  "messenger_messages": [
+    {
+      "id": "e6b2b82f-b199-4a60-9696-5f3e40d2715d",
+      "chatId": "ff6bc7f1-449a-4419-af62-b89ce6cae0aa",
+      "contactId": "9d3f0e7f-dcbd-4e56-a5e8-87b8154e9edf",
+      "value": "Hi!",
+      "createdAt": "2022-01-05T15:56:48.732Z"
+    }
+  ],
+  "messenger_profiles": [
+    {
+      "id": "cfaad35d-07a3-4447-a6c3-d8c3d54fd5df",
+      "name": "Jack Smith",
+      "email": "smith.jack@company.com",
+      "status": "online",
+      "avatar": "/assets/images/avatars/smith.jack.jpg",
+      "about": "Hi there! I'm using ObjectAGIChat."
+    }
+  ],
+  "contacts_items": [
+    {
+      "id": "c674b6e1-b846-4bba-824b-0b4df0cdec48",
+      "avatar": "/assets/images/avatars/male-13.jpg",
+      "background": "/assets/images/cards/35-640x480.jpg",
+      "name": "Duran Barr",
+      "emails": [
+        {
+          "email": "duranbarr@mail.com",
+          "label": "Personal"
+        },
+        {
+          "email": "barr.duran@hinway.name",
+          "label": "Work"
+        }
+      ],
+      "phoneNumbers": [
+        {
+          "country": "sr",
+          "phoneNumber": "857 457 2508",
+          "label": "Mobile"
+        },
+        {
+          "country": "sr",
+          "phoneNumber": "887 522 2146",
+          "label": "Work"
+        },
+        {
+          "country": "sr",
+          "phoneNumber": "947 574 3174",
+          "label": "Home"
+        }
+      ],
+      "title": "Insurance Analyst",
+      "company": "Hinway",
+      "birthday": "1977-11-06T12:00:00.000Z",
+      "address": "103 Chestnut Avenue, Glenbrook, Indiana, PO2578",
+      "notes": "<p>Ad tempor occaecat in veniam esse qui exercitation laborum esse.</p>",
+      "tags": [
+        "a8991c76-2fda-4bbd-a718-df13d6478847"
+      ]
+    }
+  ],
+  "contacts_tags": [
+    {
+      "id": "c31e9e5d-e0cb-4574-a13f-8a6ee5ff8309",
+      "title": "Work"
+    },
+    {
+      "id": "a8991c76-2fda-4bbd-a718-df13d6478847",
+      "title": "Friend"
+    },
+    {
+      "id": "56ddbd47-4078-4ddd-8448-73c5e88d5f59",
+      "title": "Family"
+    }
+  ],
+  "countries": [
+    {
+      "id": "f9033267-9df0-46e4-9f79-c8b022e5c835",
+      "iso": "us",
+      "name": "United States",
+      "code": "+1",
+      "flagImagePos": "-1px -69px"
+    }
+  ],
+  "ai_image_generator_presets": [
+    {
+      "id": "12",
+      "name": "Floating Islands",
+      "settings": {
+        "prompt": "Floating islands with waterfalls in a sunset sky",
+        "negativePrompt": "modern buildings, vehicles, people",
+        "size": "1024x1024",
+        "artStyle": "fantasy_art",
+        "style": "natural",
+        "mood": "uplifting",
+        "lighting": "golden_hour",
+        "quality": "hd"
+      },
+      "createdAt": 1708704000000
+    }
+  ]
+}

@@ -1,0 +1,254 @@
+import { amber } from '@mui/material/colors';
+import Divider from '@mui/material/Divider';
+import IconButton from '@mui/material/IconButton';
+import Input from '@mui/material/Input';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
+import Tooltip from '@mui/material/Tooltip';
+import Typography from '@mui/material/Typography';
+import clsx from 'clsx';
+import { memo, useEffect, useMemo, useRef, useState } from 'react';
+import Link from '@objectagi/core/Link';
+import _ from 'lodash';
+import Box from '@mui/material/Box';
+import ObjectAGISvgIcon from '../ObjectAGISvgIcon';
+import { ObjectAGIFlatNavItemType } from '../ObjectAGINavItemType';
+
+type ObjectAGIShortcutsProps = {
+    className?: string;
+    navigation: ObjectAGIFlatNavItemType[];
+    onChange: (T: string[]) => void;
+    shortcuts?: string[];
+    variant?: 'horizontal' | 'vertical';
+};
+
+function ObjectAGIShortcuts(props: ObjectAGIShortcutsProps) {
+    const { navigation = [], shortcuts = [], onChange, variant = 'horizontal', className = '' } = props;
+
+    const searchInputRef = useRef<HTMLInputElement>(null);
+    const [addMenu, setAddMenu] = useState<HTMLElement | null>(null);
+    const [searchText, setSearchText] = useState('');
+    const [searchResults, setSearchResults] = useState<ObjectAGIFlatNavItemType[]>([]);
+    const [shortcutItems, setShortcutItems] = useState<ObjectAGIFlatNavItemType[]>([]);
+
+    useEffect(() => {
+        const _shortcutItems = shortcuts
+            ? shortcuts.map((id) => _.find(navigation, { id }))
+            : ([] as ObjectAGIFlatNavItemType[]);
+
+        setShortcutItems(_shortcutItems);
+    }, [shortcuts]);
+
+    function addMenuClick(event: React.MouseEvent<HTMLElement>) {
+        setAddMenu(event.currentTarget);
+    }
+
+    function addMenuClose() {
+        setAddMenu(null);
+    }
+
+    function search(ev: React.ChangeEvent<HTMLInputElement>) {
+        const newSearchText = ev.target.value;
+
+        setSearchText(newSearchText);
+
+        if (newSearchText.length !== 0 && navigation) {
+            setSearchResults(
+                navigation.filter((item) => item?.title?.toLowerCase()?.includes(newSearchText?.toLowerCase()))
+            );
+            return;
+        }
+
+        setSearchResults([]);
+    }
+
+    function toggleInShortcuts(id: string) {
+        let newShortcuts = [...shortcuts];
+
+        newShortcuts = _.xor(newShortcuts, [id]);
+
+        onChange(newShortcuts);
+    }
+
+    return (
+        <Box className={clsx('flex shrink overflow-hidden', variant === 'vertical' ? 'flex-col' : '', className)}>
+            {useMemo(() => {
+                return (
+                    <Box
+                        className={clsx(
+                            'flex flex-1 items-center rounded-lg',
+                            variant === 'vertical' ? 'flex-col' : 'max-h-9'
+                        )}
+                    >
+                        {shortcutItems.map(
+                            (_item) =>
+                                _item && (
+                                    <Link
+                                        to={_item.url}
+                                        key={_item.id}
+                                        role="button"
+                                    >
+                                        <Tooltip
+                                            title={_item.title}
+                                            placement={variant === 'horizontal' ? 'bottom' : 'left'}
+                                        >
+                                            <IconButton className="h-9 w-9 p-0 rounded-none">
+                                                {_item.icon ? (
+                                                    <ObjectAGISvgIcon size={20}>{_item.icon}</ObjectAGISvgIcon>
+                                                ) : (
+                                                    <span className="text-2xl font-semibold uppercase">
+                                                        {_item.title[0]}
+                                                    </span>
+                                                )}
+                                            </IconButton>
+                                        </Tooltip>
+                                    </Link>
+                                )
+                        )}
+
+                        <IconButton
+                            className="h-9 w-9 p-0 rounded-none"
+                            aria-haspopup="true"
+                            onClick={addMenuClick}
+                        >
+                            <ObjectAGISvgIcon 
+                                size={20} 
+                                sx={{ 
+                                    color: '#212121',
+                                    '& stroke': { strokeWidth: '1.2px !important' },
+                                    '& path': { strokeWidth: '1.2px !important' }
+                                }}
+                            >
+                                heroicons-outline:eye
+                            </ObjectAGISvgIcon>
+                        </IconButton>
+                    </Box>
+                );
+            }, [addMenu, variant, shortcutItems])}
+
+            <Menu
+                id="add-menu"
+                anchorEl={addMenu}
+                open={Boolean(addMenu)}
+                onClose={addMenuClose}
+                classes={{
+                    paper: 'min-w-64'
+                }}
+                TransitionProps={{
+                    onEntered: () => {
+                        searchInputRef?.current?.focus();
+                    },
+                    onExited: () => {
+                        setSearchText('');
+                    }
+                }}
+            >
+                <div className="p-4 pt-2">
+                    <Input
+                        inputRef={searchInputRef}
+                        value={searchText}
+                        onChange={search}
+                        placeholder="Search for an app or page"
+                        fullWidth
+                        inputProps={{
+                            'aria-label': 'Search'
+                        }}
+                        disableUnderline
+                    />
+                </div>
+
+                <Divider />
+
+                {useMemo(() => {
+                    if (searchText.length === 0 || !searchResults || searchResults.length === 0) {
+                        return null;
+                    }
+
+                    return searchResults.map((_item) => (
+                        <ShortcutMenuItem
+                            shortcuts={shortcuts}
+                            key={_item.id}
+                            item={_item}
+                            onToggle={() => toggleInShortcuts(_item.id)}
+                        />
+                    ));
+                }, [searchResults, shortcuts, searchText])}
+
+                {searchText.length !== 0 && searchResults.length === 0 && (
+                    <Typography
+                        color="text.secondary"
+                        className="p-4 pb-2"
+                    >
+                        No results..
+                    </Typography>
+                )}
+
+                {useMemo(() => {
+                    if (searchText.length !== 0) {
+                        return null;
+                    }
+
+                    return shortcutItems.map(
+                        (_item) =>
+                            _item && (
+                                <ShortcutMenuItem
+                                    shortcuts={shortcuts}
+                                    key={_item.id}
+                                    item={_item}
+                                    onToggle={() => toggleInShortcuts(_item.id)}
+                                />
+                            )
+                    );
+                }, [shortcutItems, shortcuts, searchText])}
+            </Menu>
+        </Box>
+    );
+}
+
+function ShortcutMenuItem(props: {
+    shortcuts: ObjectAGIShortcutsProps['shortcuts'];
+    item: ObjectAGIFlatNavItemType;
+    onToggle: (T: string) => void;
+}) {
+    const { item, onToggle, shortcuts = [] } = props;
+
+    if (!item || !item.id) {
+        return null;
+    }
+
+    const isActive = shortcuts.includes(item.id);
+
+    return (
+        <Link
+            to={item.url || ''}
+            role="button"
+        >
+            <MenuItem key={item.id}>
+                <ListItemIcon className="min-w-9">
+                    {item.icon ? (
+                        <ObjectAGISvgIcon>{item.icon}</ObjectAGISvgIcon>
+                    ) : (
+                        <span className="text-center text-2xl font-semibold uppercase">{item.title[0]}</span>
+                    )}
+                </ListItemIcon>
+                <ListItemText primary={item.title} />
+                <IconButton
+                    onClick={(ev) => {
+                        ev.preventDefault();
+                        ev.stopPropagation();
+                        onToggle(item.id);
+                    }}
+                    size="large"
+                >
+                    <ObjectAGISvgIcon sx={{ color: amber[500] }}>
+                        {isActive ? 'heroicons-solid:star' : 'heroicons-outline:star'}
+                    </ObjectAGISvgIcon>
+                </IconButton>
+            </MenuItem>
+        </Link>
+    );
+}
+
+export default memo(ObjectAGIShortcuts);

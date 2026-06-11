@@ -1,0 +1,359 @@
+[
+  {
+    "ehuman": "Sable Quinn",
+    "human": "admin",
+    "sent-query": "Explain the derivative of x^2.",
+    "response-query": "It's 2x, by power rule.",
+    "message-timestamp": "2023-05-23T05:50:52Z"
+  },
+  {
+    "ehuman": "Kai Nexus",
+    "human": "admin",
+    "sent-query": "Great, thanks!",
+    "response-query": "No problem.",
+    "message-timestamp": "2023-05-31T18:21:15Z"
+  },
+  {
+    "ehuman": "Kenneth Reyes",
+    "human": "admin",
+    "sent-query": "Key figures?",
+    "response-query": "Da Vinci, Michelangelo, Shakespeare.",
+    "message-timestamp": "2023-06-27T17:21:01Z"
+  },
+  {
+    "ehuman": "Kai Nexus",
+    "human": "admin",
+    "sent-query": "Test it with 'hello'",
+    "response-query": "Reversed: 'olleh'",
+    "message-timestamp": "2023-08-04T01:40:22Z"
+  },
+  {
+    "ehuman": "Randy Holt",
+    "human": "admin",
+    "sent-query": "What's the distance to the nearest star?",
+    "response-query": "Proxima Centauri, about 4.2 light years.",
+    "message-timestamp": "2024-01-02T04:51:56Z"
+  },
+  {
+    "ehuman": "Luna Voss",
+    "human": "admin",
+    "sent-query": "Classic! Talk later.",
+    "response-query": "Sure thing.",
+    "message-timestamp": "2024-01-14T08:33:17Z"
+  },
+  {
+    "ehuman": "Roger Synapsis",
+    "human": "admin",
+    "sent-query": "Got it.",
+    "response-query": "Good.",
+    "message-timestamp": "2024-03-01T09:25:29Z"
+  },
+  {
+    "ehuman": "Luna Voss",
+    "human": "admin",
+    "sent-query": "Hey, how's your day going?",
+    "response-query": "Pretty good, just chilling. You?",
+    "message-timestamp": "2024-06-03T13:35:48Z"
+  },
+  {
+    "ehuman": "Randy Holt",
+    "human": "admin",
+    "sent-query": "Cool info.",
+    "response-query": "Thanks!",
+    "message-timestamp": "2024-07-03T04:38:21Z"
+  },
+  {
+    "ehuman": "Kenneth Reyes",
+    "human": "admin",
+    "sent-query": "Tell me about the Renaissance.",
+    "response-query": "Period of cultural revival in Europe, 14th-17th century.",
+    "message-timestamp": "2024-08-12T08:49:52Z"
+  },
+  {
+    "ehuman": "Kai Nexus",
+    "human": "admin",
+    "sent-query": "Can you write a Python function to reverse a string?",
+    "response-query": "Sure, def reverse(s): return s[::-1]",
+    "message-timestamp": "2024-08-21T20:44:44Z"
+  },
+  {
+    "ehuman": "Roger Synapsis",
+    "human": "admin",
+    "sent-query": "Equation?",
+    "response-query": "6CO2 + 6H2O -> C6H12O6 + 6O2",
+    "message-timestamp": "2024-09-01T11:10:09Z"
+  },
+  {
+    "ehuman": "Kenneth Reyes",
+    "human": "admin",
+    "sent-query": "Interesting.",
+    "response-query": "Indeed.",
+    "message-timestamp": "2024-11-21T04:34:36Z"
+  },
+  {
+    "ehuman": "Randy Holt",
+    "human": "admin",
+    "sent-query": "Any planets?",
+    "response-query": "Yes, at least one exoplanet.",
+    "message-timestamp": "2025-02-11T00:26:11Z"
+  },
+  {
+    "ehuman": "Luna Voss",
+    "human": "admin",
+    "sent-query": "Same here, busy with work. Seen any good movies lately?",
+    "response-query": "Yeah, watched Inception again. Mind-bending!",
+    "message-timestamp": "2025-07-15T17:01:31Z"
+  },
+  {
+    "ehuman": "Sable Quinn",
+    "human": "admin",
+    "sent-query": "What about integral?",
+    "response-query": "Integral is (x^3)/3 + C.",
+    "message-timestamp": "2025-08-10T03:53:15Z"
+  },
+  {
+    "ehuman": "Sable Quinn",
+    "human": "admin",
+    "sent-query": "Understood.",
+    "response-query": "Glad to help.",
+    "message-timestamp": "2025-09-16T00:35:45Z"
+  },
+  {
+    "ehuman": "Roger Synapsis",
+    "human": "admin",
+    "sent-query": "Explain photosynthesis.",
+    "response-query": "Plants convert CO2 and water to glucose using sunlight.",
+    "message-timestamp": "2025-09-23T16:01:22Z"
+  },
+  {
+    "ehuman": "Orion Kross",
+    "human": "admin",
+    "sent-query": "Write a haiku about the ocean.",
+    "response-query": "42, according to Douglas Adams.",
+    "message-timestamp": "2025-10-03T12:10:22Z"
+  },
+  {
+    "ehuman": "Jaxen Grey",
+    "human": "admin",
+    "sent-query": "Recommend a sci-fi book.",
+    "response-query": "Why don't skeletons fight each other? They don't have the guts.",
+    "message-timestamp": "2025-10-07T15:06:22Z"
+  },
+  {
+    "ehuman": "Orion Kross",
+    "human": "admin",
+    "sent-query": "Describe the water cycle.",
+    "response-query": "Blue, like the ocean under starlight.",
+    "message-timestamp": "2025-10-07T15:21:22Z"
+  },
+  {
+    "ehuman": "Silas Thorne",
+    "human": "admin",
+    "sent-query": "How does blockchain work?",
+    "response-query": "Dune by Frank Herbert is a classic.",
+    "message-timestamp": "2025-10-10T22:41:22Z"
+  },
+  {
+    "ehuman": "Silas Thorne",
+    "human": "admin",
+    "sent-query": "Write a haiku about the ocean.",
+    "response-query": "391.",
+    "message-timestamp": "2025-10-12T07:23:22Z"
+  },
+  {
+    "ehuman": "Elara Vance",
+    "human": "admin",
+    "sent-query": "What's the current time?",
+    "response-query": "You go first! Rock, paper, or scissors?",
+    "message-timestamp": "2025-10-14T00:09:22Z"
+  },
+  {
+    "ehuman": "Lyra Belacqua",
+    "human": "admin",
+    "sent-query": "What's the capital of France?",
+    "response-query": "When two particles are linked so that the state of one instantly influences the other, no matter the distance.",
+    "message-timestamp": "2025-10-14T09:57:22Z"
+  },
+  {
+    "ehuman": "Elara Vance",
+    "human": "admin",
+    "sent-query": "How to make coffee?",
+    "response-query": "When two particles are linked so that the state of one instantly influences the other, no matter the distance.",
+    "message-timestamp": "2025-10-18T07:18:22Z"
+  },
+  {
+    "ehuman": "Jaxen Grey",
+    "human": "admin",
+    "sent-query": "What's the meaning of life?",
+    "response-query": "Dune by Frank Herbert is a classic.",
+    "message-timestamp": "2025-10-21T23:45:22Z"
+  },
+  {
+    "ehuman": "Orion Kross",
+    "human": "admin",
+    "sent-query": "What's the square root of 144?",
+    "response-query": "The universe expanded from a hot, dense state ~13.8 billion years ago.",
+    "message-timestamp": "2025-10-24T21:39:22Z"
+  },
+  {
+    "ehuman": "Elara Vance",
+    "human": "admin",
+    "sent-query": "Play rock paper scissors.",
+    "response-query": "Paris.",
+    "message-timestamp": "2025-10-25T07:46:22Z"
+  },
+  {
+    "ehuman": "Lyra Belacqua",
+    "human": "admin",
+    "sent-query": "What's the capital of France?",
+    "response-query": "When two particles are linked so that the state of one instantly influences the other, no matter the distance.",
+    "message-timestamp": "2025-10-31T17:10:22Z"
+  },
+  {
+    "ehuman": "Jaxen Grey",
+    "human": "admin",
+    "sent-query": "Describe the water cycle.",
+    "response-query": "¡Claro! ¿En qué puedo ayudarte?",
+    "message-timestamp": "2025-10-31T18:19:22Z"
+  },
+  {
+    "ehuman": "Silas Thorne",
+    "human": "admin",
+    "sent-query": "Who painted the Mona Lisa?",
+    "response-query": "Evaporation → Condensation → Precipitation → Collection.",
+    "message-timestamp": "2025-11-01T20:14:22Z"
+  },
+  {
+    "ehuman": "Silas Thorne",
+    "human": "admin",
+    "sent-query": "What's the capital of France?",
+    "response-query": "42, according to Douglas Adams.",
+    "message-timestamp": "2025-11-08T19:59:22Z"
+  },
+  {
+    "ehuman": "Orion Kross",
+    "human": "admin",
+    "sent-query": "Who painted the Mona Lisa?",
+    "response-query": "Blue, like the ocean under starlight.",
+    "message-timestamp": "2025-11-09T20:37:22Z"
+  },
+  {
+    "ehuman": "Lyra Belacqua",
+    "human": "admin",
+    "sent-query": "Convert 100 USD to EUR.",
+    "response-query": "Evaporation → Condensation → Precipitation → Collection.",
+    "message-timestamp": "2025-11-13T17:34:22Z"
+  },
+  {
+    "ehuman": "Elara Vance",
+    "human": "admin",
+    "sent-query": "Solve 17 × 23.",
+    "response-query": "12.",
+    "message-timestamp": "2025-11-14T02:04:22Z"
+  },
+  {
+    "ehuman": "Orion Kross",
+    "human": "admin",
+    "sent-query": "Tell me a joke.",
+    "response-query": "Leonardo da Vinci.",
+    "message-timestamp": "2025-11-17T12:44:22Z"
+  },
+  {
+    "ehuman": "Jaxen Grey",
+    "human": "admin",
+    "sent-query": "Recommend a sci-fi book.",
+    "response-query": "Why don't skeletons fight each other? They don't have the guts.",
+    "message-timestamp": "2025-11-21T05:07:22Z"
+  },
+  {
+    "ehuman": "Silas Thorne",
+    "human": "admin",
+    "sent-query": "How does blockchain work?",
+    "response-query": "I don't have real-time weather data, but imagine it's sunny!",
+    "message-timestamp": "2025-11-22T20:00:22Z"
+  },
+  {
+    "ehuman": "Lyra Belacqua",
+    "human": "admin",
+    "sent-query": "Solve 17 × 23.",
+    "response-query": "Leonardo da Vinci.",
+    "message-timestamp": "2025-11-27T09:14:22Z"
+  },
+  {
+    "ehuman": "Silas Thorne",
+    "human": "admin",
+    "sent-query": "Play rock paper scissors.",
+    "response-query": "When two particles are linked so that the state of one instantly influences the other, no matter the distance.",
+    "message-timestamp": "2025-12-05T05:03:22Z"
+  },
+  {
+    "ehuman": "Orion Kross",
+    "human": "admin",
+    "sent-query": "Convert 100 USD to EUR.",
+    "response-query": "12.",
+    "message-timestamp": "2025-12-06T00:51:22Z"
+  },
+  {
+    "ehuman": "Jaxen Grey",
+    "human": "admin",
+    "sent-query": "What's the meaning of life?",
+    "response-query": "Dune by Frank Herbert is a classic.",
+    "message-timestamp": "2025-12-06T01:28:22Z"
+  },
+  {
+    "ehuman": "Jaxen Grey",
+    "human": "admin",
+    "sent-query": "Tell me a joke.",
+    "response-query": "Leonardo da Vinci.",
+    "message-timestamp": "2025-12-08T13:20:22Z"
+  },
+  {
+    "ehuman": "Lyra Belacqua",
+    "human": "admin",
+    "sent-query": "What's the capital of France?",
+    "response-query": "Dune by Frank Herbert is a classic.",
+    "message-timestamp": "2025-12-10T02:09:22Z"
+  },
+  {
+    "ehuman": "Jaxen Grey",
+    "human": "admin",
+    "sent-query": "What's the capital of France?",
+    "response-query": "A decentralized ledger using cryptography and consensus.",
+    "message-timestamp": "2025-12-17T13:28:22Z"
+  },
+  {
+    "ehuman": "Jaxen Grey",
+    "human": "admin",
+    "sent-query": "Play rock paper scissors.",
+    "response-query": "42, according to Douglas Adams.",
+    "message-timestamp": "2025-12-18T14:13:22Z"
+  },
+  {
+    "ehuman": "Jaxen Grey",
+    "human": "admin",
+    "sent-query": "What's the current time?",
+    "response-query": "Paris.",
+    "message-timestamp": "2025-12-23T03:36:22Z"
+  },
+  {
+    "ehuman": "Silas Thorne",
+    "human": "admin",
+    "sent-query": "Explain the big bang theory.",
+    "response-query": "About 37 million people.",
+    "message-timestamp": "2025-12-23T04:40:22Z"
+  },
+  {
+    "ehuman": "Lyra Belacqua",
+    "human": "admin",
+    "sent-query": "Play rock paper scissors.",
+    "response-query": "42, according to Douglas Adams.",
+    "message-timestamp": "2025-12-27T15:28:22Z"
+  },
+  {
+    "ehuman": "Silas Thorne",
+    "human": "admin",
+    "sent-query": "How does blockchain work?",
+    "response-query": "Dune by Frank Herbert is a classic.",
+    "message-timestamp": "2026-01-06T11:29:22Z"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "eHumanName": "Kenneth Reyes",
+    "AccessLevel": "Level 5 (Superuser)",
+    "OperationType": "Command & Control",
+    "AssignTo": "Strategic Oversight",
+    "IQ": 155,
+    "ActiveProjects": ["Project Chimera", "Kernel Genesis"],
+    "IndustrySkills": ["Strategic Planning", "Neural Architecture"],
+    "Languages": ["English", "Python", "Rust"],
+    "Location": "Central Node",
+    "ComplianceLevel": "Very High"
+  },
+  {
+    "eHumanName": "Luna Voss",
+    "AccessLevel": "Level 4",
+    "OperationType": "Structural Design",
+    "AssignTo": "Project Chimera",
+    "IQ": 142,
+    "ActiveProjects": ["Project Chimera"],
+    "IndustrySkills": ["System Design", "Scalability"],
+    "Languages": ["English", "C++"],
+    "Location": "North Quadrant",
+    "ComplianceLevel": "High"
+  },
+  {
+    "eHumanName": "Sable Quinn",
+    "AccessLevel": "Level 3",
+    "OperationType": "Data Intelligence",
+    "AssignTo": "Kernel Genesis",
+    "IQ": 148,
+    "ActiveProjects": ["Kernel Genesis"],
+    "IndustrySkills": ["Forensics", "Pattern Recognition"],
+    "Languages": ["English", "SQL", "R"],
+    "Location": "East Quadrant",
+    "ComplianceLevel": "High"
+  },
+  {
+    "eHumanName": "Roger Synapsis",
+    "AccessLevel": "Level 4",
+    "OperationType": "Infrastructure Management",
+    "AssignTo": "Sales Metric Audit",
+    "IQ": 135,
+    "ActiveProjects": ["Infrastructure Migration"],
+    "IndustrySkills": ["DevOps", "Network Security"],
+    "Languages": ["English", "PowerShell", "Go"],
+    "Location": "Server Room Alpha",
+    "ComplianceLevel": "Medium"
+  },
+  {
+    "eHumanName": "Kai Nexus",
+    "AccessLevel": "Level 2",
+    "OperationType": "Field Infiltration",
+    "AssignTo": "Asset Acquisition",
+    "IQ": 128,
+    "ActiveProjects": ["Asset Acquisition"],
+    "IndustrySkills": ["Social Engineering", "Exploit Dev"],
+    "Languages": ["English", "Mandarin", "Python"],
+    "Location": "Remote/Mobile",
+    "ComplianceLevel": "Low"
+  },
+  {
+    "eHumanName": "Randy Holt",
+    "AccessLevel": "Level 2",
+    "OperationType": "Tactical Enforcement",
+    "AssignTo": "Asset Acquisition",
+    "IQ": 115,
+    "ActiveProjects": ["Asset Acquisition"],
+    "IndustrySkills": ["Conflict Resolution", "Resource Guarding"],
+    "Languages": ["English"],
+    "Location": "Mobile Node",
+    "ComplianceLevel": "High"
+  }
+]

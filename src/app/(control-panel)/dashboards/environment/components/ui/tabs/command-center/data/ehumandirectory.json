@@ -1,0 +1,13 @@
+[
+  { "id": "1",  "name": "Luna Voss",      "role": "Architect" },
+  { "id": "2",  "name": "Kai Nexus",      "role": "Infiltrator" },
+  { "id": "3",  "name": "Sable Quinn",    "role": "Data Analyst" },
+  { "id": "4",  "name": "Randy Holt",     "role": "Enforcer" },
+  { "id": "5",  "name": "Kenneth Reyes",  "role": "Ops Lead" },
+  { "id": "6",  "name": "Roger Synapsis", "role": "System Admin" },
+  { "id": "7",  "name": "Silas Thorne",   "role": "Strategic Overseer" },
+  { "id": "8",  "name": "Lyra Belacqua",  "role": "Cognitive Specialist" },
+  { "id": "9",  "name": "Jaxen Grey",     "role": "Neural Interface Engineer" },
+  { "id": "10", "name": "Elara Vance",    "role": "Ethics & Compliance Officer" },
+  { "id": "11", "name": "Orion Kross",    "role": "Quantum Operations Lead" }
+]

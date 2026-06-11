@@ -1,0 +1,31 @@
+import Typography from '@mui/material/Typography';
+import clsx from 'clsx';
+
+type DocumentationSidebarHeaderProps = {
+  className?: string;
+};
+
+function DocumentationSidebarHeader(props: DocumentationSidebarHeaderProps) {
+  const { className = '' } = props;
+
+  return (
+    <div className={clsx('flex items-center space-x-2', className)} style={{ marginTop: '50px' }}>
+      <img
+        className="logo-icon h-8 w-8"
+        src="/assets/images/logo/logo.svg"
+        alt="logo"
+      />
+      <div className="logo-text flex flex-col flex-auto">
+        <Typography className="text-2xl tracking-light font-semibold leading-none">SINGULARITY</Typography>
+        <Typography
+          className="text-xl tracking-light font-bold leading-none"
+          color="primary"
+        >
+          DOCS
+        </Typography>
+      </div>
+    </div>
+  );
+}
+
+export default DocumentationSidebarHeader;
