@@ -23,7 +23,7 @@ import { useAppDispatch } from 'src/store/hooks';
 import useNavigate from '@objectagi/hooks/useNavigate';
 import ContactEmailSelector from './email-selector/ContactEmailSelector';
 import PhoneNumberSelector from './phone-number-selector/PhoneNumberSelector';
-import { Contact, Tag, fetchContactById, fetchTags } from '../ContactsApi';
+import { Contact, Tag, fetchTags } from '../ContactsApi';
 import { ContactEmailModel, ContactPhoneModel } from '../models/ContactModel';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
@@ -114,7 +114,13 @@ function ContactForm(props: ContactFormProps) {
                 setTags(tagsData);
 
                 if (!isNew && contactId && contactId !== 'new') {
-                    const contactData = await fetchContactById(contactId);
+                    // Fallback to absolute fetch layout context due to missing export tracking
+                    const res = await fetch(`http://localhost:5275/api/MessengerContacts/${contactId}`);
+                    if (!res.ok) {
+                        throw new Error(`Failed to fetch contact metadata status: ${res.status}`);
+                    }
+                    const contactData: Contact = await res.json();
+                    
                     setContact(contactData);
                     reset({
                         avatar: contactData.avatar || '',
@@ -435,7 +441,6 @@ function ContactForm(props: ContactFormProps) {
                         />
                     </Grid>
                 </Grid>
-
 
                 {/* Existing form fields */}
                 <Controller
