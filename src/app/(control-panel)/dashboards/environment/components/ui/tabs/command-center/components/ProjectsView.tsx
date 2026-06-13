@@ -128,7 +128,7 @@ export default function NeuralCoreView() {
           </Typography>
           {regions.map((r) => (
             <Typography key={r.id} sx={{ color: 'rgba(255,255,255,0.5)', fontFamily: 'monospace', fontSize: '10px', mt: 0.5 }}>
-              {r.regionName} >> <span style={{ color: AQUA_BLUE }}>{r.loadPercentage}%</span>
+              {r.regionName} {'>>'} <span style={{ color: AQUA_BLUE }}>{r.loadPercentage}%</span>
             </Typography>
           ))}
         </Box>
