@@ -20,8 +20,12 @@ const providers = [
         throw new Error('Email and password are required');
       }
 
+      // Dynamically pull the live AWS backend URL, or fall back to localhost for local dev execution
+      const backendUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5275';
+      console.log('[authJs] Connecting to backend auth endpoint at:', `${backendUrl}/api/Auth/login`);
+
       // CRITICAL: This must successfully call your backend login endpoint
-      const response = await fetch('http://localhost:5275/api/Auth/login', {
+      const response = await fetch(`${backendUrl}/api/Auth/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
