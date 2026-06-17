@@ -25,9 +25,9 @@ const nextConfig = {
 
     // START OF CRITICAL ADDITION
     async rewrites() {
-        // We use 127.0.0.1 instead of localhost to prevent Node.js 
-        // from failing to resolve the IPv4/IPv6 handshake.
-        const BACKEND_URL = 'http://127.0.0.1:5275';
+        // Dynamically use the environment variable on Vercel production, 
+        // or fallback to 127.0.0.1 for local development.
+        const BACKEND_URL = process.env.NEXT_PUBLIC_API_URL || 'http://127.0.0.1:5275';
 
         return [
             // Proxy for environment developer endpoints
