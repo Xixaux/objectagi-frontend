@@ -48,7 +48,7 @@ function AuthJsCredentialsSignUpForm() {
     const { email, password, firstName, lastName } = formData;
 
     try {
-      const registerResponse = await fetch('http://localhost:5275/api/Auth/register', {
+      const registerResponse = await fetch('/api/Auth/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password, firstName, lastName }),
