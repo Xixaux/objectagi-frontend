@@ -24,8 +24,11 @@ function AuthGuardRedirect({ children }: AuthGuardProps) {
       return;
     }
 
-    // Skip guard completely for sign-in page
-    if (pathname === '/sign-in') {
+    // Define all routes that unauthenticated guests are allowed to visit
+    const publicRoutes = ['/sign-in', '/sign-up', '/register', '/forgot-password'];
+
+    // Skip guard completely if the current path is a whitelisted public page
+    if (publicRoutes.includes(pathname)) {
       setAccessGranted(true);
       return;
     }
@@ -36,8 +39,8 @@ function AuthGuardRedirect({ children }: AuthGuardProps) {
       return;
     }
 
-    // Guest on protected page → redirect to sign-in
-    if (isGuest && pathname !== '/sign-in') {
+    // Guest on a protected page → redirect securely back to sign-in
+    if (isGuest && !publicRoutes.includes(pathname)) {
       navigate('/sign-in');
     }
 
