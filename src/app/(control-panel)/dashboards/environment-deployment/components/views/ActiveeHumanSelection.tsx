@@ -33,7 +33,7 @@ export default function ActiveeHumanSelection({
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch('http://localhost:5275/api/eHumanLibrary')
+    fetch('/api/eHumanLibrary')
       .then(res => {
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         return res.json();

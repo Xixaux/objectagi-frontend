@@ -150,7 +150,7 @@ function DataTab() {
       };
 
       // Simulating API call for data management settings
-      const response = await fetch('http://localhost:5275/api/SetDataManagement', {
+      const response = await fetch('/api/SetDataManagement', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),

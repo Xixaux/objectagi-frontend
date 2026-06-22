@@ -38,7 +38,7 @@ export default function OperationsView({ getComplianceColor }: OperationsViewPro
         setError(null);
 
         // ← UPDATE THIS URL to match your exact ASP.NET controller route
-        const response = await fetch('http://localhost:5275/api/OperationsView', {
+        const response = await fetch('/api/OperationsView', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',

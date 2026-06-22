@@ -46,7 +46,7 @@ export default function LifeCycleManagement() {
   useEffect(() => {
     const fetchLifecycleData = async () => {
       try {
-        const response = await fetch('http://localhost:5275/api/LifecycleManagement');
+        const response = await fetch('/api/LifecycleManagement');
         
         if (!response.ok) {
           throw new Error(`Failed to fetch: ${response.status}`);

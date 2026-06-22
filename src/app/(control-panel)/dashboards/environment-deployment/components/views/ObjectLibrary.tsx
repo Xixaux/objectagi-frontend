@@ -44,7 +44,7 @@ export default function ObjectLibrary() {
         setLoading(true);
         setError(null);
 
-        const response = await fetch('http://localhost:5275/api/ObjectLibrary', {
+        const response = await fetch('/api/ObjectLibrary', {
           method: 'GET',
           headers: { 'Content-Type': 'application/json' },
         });

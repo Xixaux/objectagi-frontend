@@ -45,7 +45,7 @@ export default function SelfModification() {
         setLoading(true);
         setError(null);
 
-        const response = await fetch('http://localhost:5275/api/SelfModification', {
+        const response = await fetch('/api/SelfModification', {
           method: 'GET',
           headers: { 'Content-Type': 'application/json' },
         });

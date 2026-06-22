@@ -202,7 +202,7 @@ function AccountTab() {
                 PrimaryUse: formData.primaryUse,
                 Industry: formData.industry,
             };
-            const response = await fetch('http://localhost:5275/api/GeneralSettings', {
+            const response = await fetch('/api/GeneralSettings', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(payload)

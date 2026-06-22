@@ -37,7 +37,7 @@ export default function NotificationPanel() {
   const fetchNotifications = async () => {
     try {
       setLoading(true);
-      const response = await fetch('http://localhost:5275/api/UI_Notifications', {
+      const response = await fetch('/api/UI_Notifications', {
         method: 'GET',
         headers: { 'Content-Type': 'application/json' },
       });
@@ -65,7 +65,7 @@ export default function NotificationPanel() {
   // 2. Handle Dismiss (Delete from DB)
   const handleDismiss = async (id: string) => {
     try {
-      const response = await fetch(`http://localhost:5275/api/UI_Notifications/${id}`, {
+      const response = await fetch(`/api/UI_Notifications/${id}`, {
         method: 'DELETE',
       });
       if (response.ok) {

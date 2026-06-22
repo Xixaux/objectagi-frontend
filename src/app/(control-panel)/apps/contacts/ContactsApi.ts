@@ -74,7 +74,7 @@ export type AccumulatorType = Record<string, GroupedContacts>;
 export const contactsApi = createApi({
     reducerPath: 'contactsApi',
     baseQuery: fetchBaseQuery({
-        baseUrl: 'http://localhost:5275/api/MessengerContacts',
+        baseUrl: '/api/MessengerContacts',
         prepareHeaders: (headers) => {
             headers.set('Content-Type', 'application/json');
             return headers;
@@ -131,7 +131,7 @@ export const {
 export async function fetchContactsList(): Promise<Contact[]> {
     console.log('Starting fetchContactsList');
     try {
-        const response = await fetch('http://localhost:5275/api/MessengerContacts', {
+        const response = await fetch('/api/MessengerContacts', {
             method: 'GET',
             headers: { 'Content-Type': 'application/json' },
         });
@@ -155,7 +155,7 @@ export async function fetchContactsList(): Promise<Contact[]> {
 export async function fetchCountries(): Promise<Country[]> {
     console.log('Fetching countries from API');
     try {
-        const response = await fetch('http://localhost:5275/api/MessengerContacts/countries', {
+        const response = await fetch('/api/MessengerContacts/countries', {
             headers: { 'Content-Type': 'application/json' },
         });
         console.log('Countries response status:', response.status);
@@ -178,7 +178,7 @@ export async function fetchCountries(): Promise<Country[]> {
 export async function fetchTags(): Promise<Tag[]> {
     console.log('Fetching tags from API');
     try {
-        const response = await fetch('http://localhost:5275/api/MessengerContacts/tags', {
+        const response = await fetch('/api/MessengerContacts/tags', {
             headers: { 'Content-Type': 'application/json' },
         });
         console.log('Tags response status:', response.status);

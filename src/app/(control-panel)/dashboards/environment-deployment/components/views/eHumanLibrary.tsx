@@ -33,7 +33,7 @@ export default function EHumanLibrary() {
         setLoading(true);
         setError(null);
 
-        const response = await fetch('http://localhost:5275/api/eHumanLibrary', {
+        const response = await fetch('/api/eHumanLibrary', {
           method: 'GET',
           headers: { 'Content-Type': 'application/json' },
         });

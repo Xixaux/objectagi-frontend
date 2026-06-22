@@ -115,7 +115,7 @@ function ContactForm(props: ContactFormProps) {
 
                 if (!isNew && contactId && contactId !== 'new') {
                     // Fallback to absolute fetch layout context due to missing export tracking
-                    const res = await fetch(`http://localhost:5275/api/MessengerContacts/${contactId}`);
+                    const res = await fetch(`/api/MessengerContacts/${contactId}`);
                     if (!res.ok) {
                         throw new Error(`Failed to fetch contact metadata status: ${res.status}`);
                     }
@@ -195,8 +195,8 @@ function ContactForm(props: ContactFormProps) {
 
                 const method = isNew ? 'POST' : 'PUT';
                 const url = isNew
-                    ? 'http://localhost:5275/api/MessengerContacts'
-                    : `http://localhost:5275/api/MessengerContacts/${contactId}`;
+                    ? '/api/MessengerContacts'
+                    : `/api/MessengerContacts/${contactId}`;
 
                 const response = await fetch(url, {
                     method,
@@ -221,7 +221,7 @@ function ContactForm(props: ContactFormProps) {
     const handleRemoveContact = async () => {
         if (!contactId || contactId === 'new') return;
         try {
-            const response = await fetch(`http://localhost:5275/api/MessengerContacts/${contactId}`, {
+            const response = await fetch(`/api/MessengerContacts/${contactId}`, {
                 method: 'DELETE',
                 headers: { 'Content-Type': 'application/json' },
             });

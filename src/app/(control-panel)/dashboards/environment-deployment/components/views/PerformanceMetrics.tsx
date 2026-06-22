@@ -52,7 +52,7 @@ export default function PerformanceProfileView() {
         setLoading(true);
         setError(null);
 
-        const response = await fetch('http://localhost:5275/api/PerformanceMetrics', {
+        const response = await fetch('/api/PerformanceMetrics', {
           method: 'GET',
           headers: { 'Content-Type': 'application/json' },
         });

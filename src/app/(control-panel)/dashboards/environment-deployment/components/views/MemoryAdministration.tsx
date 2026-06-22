@@ -69,7 +69,7 @@ export default function MemoryAdministration() {
   useEffect(() => {
     const fetchMemory = async () => {
       try {
-        const response = await fetch('http://localhost:5275/api/MemoryManagement');
+        const response = await fetch('/api/MemoryManagement');
         
         if (!response.ok) {
           throw new Error(`Failed to fetch: ${response.status}`);
